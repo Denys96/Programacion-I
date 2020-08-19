@@ -29,6 +29,11 @@ Partial Class Form1
         Me.lbllongitud = New System.Windows.Forms.Label()
         Me.txtentrada = New System.Windows.Forms.TextBox()
         Me.txtrespuesta = New System.Windows.Forms.TextBox()
+        Me.lblalmacenamiento = New System.Windows.Forms.Label()
+        Me.cboalmacenamientoentrada = New System.Windows.Forms.ComboBox()
+        Me.cboalmacenamientosalida = New System.Windows.Forms.ComboBox()
+        Me.lblalmacenamientode = New System.Windows.Forms.Label()
+        Me.lblalamacenamientoa = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cbo2
@@ -54,30 +59,30 @@ Partial Class Form1
         'lbl1
         '
         Me.lbl1.AutoSize = True
-        Me.lbl1.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl1.Location = New System.Drawing.Point(12, 108)
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(38, 23)
+        Me.lbl1.Size = New System.Drawing.Size(26, 16)
         Me.lbl1.TabIndex = 2
         Me.lbl1.Text = "De:"
         '
         'lbl2
         '
         Me.lbl2.AutoSize = True
-        Me.lbl2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl2.Location = New System.Drawing.Point(247, 108)
         Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(26, 19)
+        Me.lbl2.Size = New System.Drawing.Size(21, 16)
         Me.lbl2.TabIndex = 3
         Me.lbl2.Text = "A:"
         '
         'lbllongitud
         '
         Me.lbllongitud.AutoSize = True
-        Me.lbllongitud.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbllongitud.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbllongitud.Location = New System.Drawing.Point(12, 74)
         Me.lbllongitud.Name = "lbllongitud"
-        Me.lbllongitud.Size = New System.Drawing.Size(79, 20)
+        Me.lbllongitud.Size = New System.Drawing.Size(67, 16)
         Me.lbllongitud.TabIndex = 4
         Me.lbllongitud.Text = "Longitud"
         '
@@ -95,11 +100,66 @@ Partial Class Form1
         Me.txtrespuesta.Size = New System.Drawing.Size(100, 20)
         Me.txtrespuesta.TabIndex = 9
         '
+        'lblalmacenamiento
+        '
+        Me.lblalmacenamiento.AutoSize = True
+        Me.lblalmacenamiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblalmacenamiento.Location = New System.Drawing.Point(12, 148)
+        Me.lblalmacenamiento.Name = "lblalmacenamiento"
+        Me.lblalmacenamiento.Size = New System.Drawing.Size(102, 16)
+        Me.lblalmacenamiento.TabIndex = 10
+        Me.lblalmacenamiento.Text = "Alcemaniento"
+        '
+        'cboalmacenamientoentrada
+        '
+        Me.cboalmacenamientoentrada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboalmacenamientoentrada.FormattingEnabled = True
+        Me.cboalmacenamientoentrada.Items.AddRange(New Object() {"Bit", "Byte", "Kilobyte", "Kibibyte", "Megabyte", "Mebibyte", "Gigabyte", "Gibibyte", "Terabyte", "Petabyte"})
+        Me.cboalmacenamientoentrada.Location = New System.Drawing.Point(70, 171)
+        Me.cboalmacenamientoentrada.Name = "cboalmacenamientoentrada"
+        Me.cboalmacenamientoentrada.Size = New System.Drawing.Size(121, 21)
+        Me.cboalmacenamientoentrada.TabIndex = 11
+        '
+        'cboalmacenamientosalida
+        '
+        Me.cboalmacenamientosalida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboalmacenamientosalida.FormattingEnabled = True
+        Me.cboalmacenamientosalida.Items.AddRange(New Object() {"Bit", "Byte", "Kilobyte", "Kibibyte", "Megabyte", "Mebibyte", "Gigabyte", "Gibibyte", "Terabyte", "Petabyte"})
+        Me.cboalmacenamientosalida.Location = New System.Drawing.Point(317, 171)
+        Me.cboalmacenamientosalida.Name = "cboalmacenamientosalida"
+        Me.cboalmacenamientosalida.Size = New System.Drawing.Size(121, 21)
+        Me.cboalmacenamientosalida.TabIndex = 12
+        '
+        'lblalmacenamientode
+        '
+        Me.lblalmacenamientode.AutoSize = True
+        Me.lblalmacenamientode.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblalmacenamientode.Location = New System.Drawing.Point(12, 171)
+        Me.lblalmacenamientode.Name = "lblalmacenamientode"
+        Me.lblalmacenamientode.Size = New System.Drawing.Size(29, 16)
+        Me.lblalmacenamientode.TabIndex = 13
+        Me.lblalmacenamientode.Text = "De:"
+        '
+        'lblalamacenamientoa
+        '
+        Me.lblalamacenamientoa.AutoSize = True
+        Me.lblalamacenamientoa.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblalamacenamientoa.Location = New System.Drawing.Point(247, 175)
+        Me.lblalamacenamientoa.Name = "lblalamacenamientoa"
+        Me.lblalamacenamientoa.Size = New System.Drawing.Size(21, 16)
+        Me.lblalamacenamientoa.TabIndex = 14
+        Me.lblalamacenamientoa.Text = "A:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(487, 350)
+        Me.Controls.Add(Me.lblalamacenamientoa)
+        Me.Controls.Add(Me.lblalmacenamientode)
+        Me.Controls.Add(Me.cboalmacenamientosalida)
+        Me.Controls.Add(Me.cboalmacenamientoentrada)
+        Me.Controls.Add(Me.lblalmacenamiento)
         Me.Controls.Add(Me.txtrespuesta)
         Me.Controls.Add(Me.txtentrada)
         Me.Controls.Add(Me.lbllongitud)
@@ -124,4 +184,9 @@ Partial Class Form1
     Friend WithEvents lbllongitud As Label
     Friend WithEvents txtentrada As TextBox
     Friend WithEvents txtrespuesta As TextBox
+    Friend WithEvents lblalmacenamiento As Label
+    Friend WithEvents cboalmacenamientoentrada As ComboBox
+    Friend WithEvents cboalmacenamientosalida As ComboBox
+    Friend WithEvents lblalmacenamientode As Label
+    Friend WithEvents lblalamacenamientoa As Label
 End Class

@@ -1,7 +1,8 @@
 ﻿Public Class Form1
     Private Sub Textbox1_textchanged(sender As Object, e As EventArgs) Handles txtentrada.TextChanged
-        Dim tipo1, tipo2 As Int64
-
+        Dim tipo1, tipo2, almacenamiento1, almacenamiento2 As Int64
+        almacenamiento1 = cboalmacenamientoentrada.SelectedIndex
+        almacenamiento2 = cboalmacenamientosalida.SelectedIndex
         tipo1 = cbo1.SelectedIndex
         tipo2 = cbo2.SelectedIndex
 
@@ -447,5 +448,449 @@
                     End If
                 End If
         End Select
+
+        Select Case cboalmacenamientoentrada.SelectedIndex
+            Case 0
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text / 8
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text / 8000
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text / 8192
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text / 8000000.0
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text / 8389000.0
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text / 8000000000.0
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 8590000000.0
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 8000000000000.0
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 8.0E+15
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 1
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text / 1000
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text / 1024
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text / 1000000.0
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text / 1049000.0
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text / 1000000000.0
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 1074000000.0
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 1000000000000.0
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 1.0E+15
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 2
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8000
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1000
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text / 1024
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text / 1000
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text / 1049
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text / 1000000.0
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 1074000.0
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 1000000000.0
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 1000000000000.0
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 3
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8192
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1024
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1.024
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text / 977
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text / 1024
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text / 976562
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 1049000.0
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 976600000.0
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 976600000000.0
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 4
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8000000.0
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1000000.0
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1000
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text * 977
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text / 1.049
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text / 1000
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 1074
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 1000000.0
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 1000000000.0
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 5
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8389000.0
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1049000.0
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1049
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text * 1024
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text * 1.049
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text / 954
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 1024
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 953674
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 953700000.0
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 6
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8000000000.0
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1000000000.0
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1000000.0
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text * 976563
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text * 1000
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text * 954
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text / 1.074
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 1000
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 1000000.0
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 7
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8590000000.0
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1074000000.0
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1074000.0
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text * 1049000.0
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text * 1074
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text * 1024
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text * 1.074
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text / 931
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 931323
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 8
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8000000000000.0
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1000000000000.0
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1000000000.0
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text * 976600000.0
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text * 1000000.0
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text * 953674
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text * 1000
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text * 931
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text / 1000
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Case 9
+                If txtentrada.Text = "" Or txtentrada.Text = "." Then
+                    txtrespuesta.Text = 0
+                Else
+                    If almacenamiento2 = 0 Then
+                        txtrespuesta.Text = txtentrada.Text * 8.0E+15
+                    Else
+                        If almacenamiento2 = 1 Then
+                            txtrespuesta.Text = txtentrada.Text * 1.0E+15
+                        Else
+                            If almacenamiento2 = 2 Then
+                                txtrespuesta.Text = txtentrada.Text * 1000000000000.0
+                            Else
+                                If almacenamiento2 = 3 Then
+                                    txtrespuesta.Text = txtentrada.Text * 976600000000.0
+                                Else
+                                    If almacenamiento2 = 4 Then
+                                        txtrespuesta.Text = txtentrada.Text * 1000000000.0
+                                    Else
+                                        If almacenamiento2 = 5 Then
+                                            txtrespuesta.Text = txtentrada.Text * 953700000.0
+                                        Else
+                                            If almacenamiento2 = 6 Then
+                                                txtrespuesta.Text = txtentrada.Text * 1000000.0
+                                            Else
+                                                If almacenamiento2 = 7 Then
+                                                    txtrespuesta.Text = txtentrada.Text * 931323
+                                                Else
+                                                    If almacenamiento2 = 8 Then
+                                                        txtrespuesta.Text = txtentrada.Text * 1000
+                                                    Else
+                                                        If almacenamiento2 = 9 Then
+                                                            txtrespuesta.Text = txtentrada.Text
+                                                        End If
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+        End Select
+
     End Sub
 End Class
