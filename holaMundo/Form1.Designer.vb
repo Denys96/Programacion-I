@@ -22,174 +22,107 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.optResiduo = New System.Windows.Forms.RadioButton()
-        Me.optexponente = New System.Windows.Forms.RadioButton()
-        Me.optPorcentaje = New System.Windows.Forms.RadioButton()
-        Me.optDividir = New System.Windows.Forms.RadioButton()
-        Me.optMultiplicar = New System.Windows.Forms.RadioButton()
-        Me.optResta = New System.Windows.Forms.RadioButton()
-        Me.optSuma = New System.Windows.Forms.RadioButton()
-        Me.lblrespuesta = New System.Windows.Forms.Label()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.lblnum2 = New System.Windows.Forms.Label()
-        Me.btnCalcular = New System.Windows.Forms.Button()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
+        Me.btnparesoimpares = New System.Windows.Forms.Button()
+        Me.lstejercicios = New System.Windows.Forms.ListBox()
+        Me.btnparoimpar = New System.Windows.Forms.Button()
+        Me.txtnum = New System.Windows.Forms.TextBox()
+        Me.lblnum = New System.Windows.Forms.Label()
+        Me.btnprimo = New System.Windows.Forms.Button()
+        Me.btncajero = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'optResiduo
+        'btnparesoimpares
         '
-        Me.optResiduo.AutoSize = True
-        Me.optResiduo.Location = New System.Drawing.Point(124, 172)
-        Me.optResiduo.Name = "optResiduo"
-        Me.optResiduo.Size = New System.Drawing.Size(64, 17)
-        Me.optResiduo.TabIndex = 24
-        Me.optResiduo.Text = "Residuo"
-        Me.optResiduo.UseVisualStyleBackColor = True
+        Me.btnparesoimpares.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnparesoimpares.Location = New System.Drawing.Point(363, 290)
+        Me.btnparesoimpares.Name = "btnparesoimpares"
+        Me.btnparesoimpares.Size = New System.Drawing.Size(195, 44)
+        Me.btnparesoimpares.TabIndex = 0
+        Me.btnparesoimpares.Text = "Mostrar pares e impares"
+        Me.btnparesoimpares.UseVisualStyleBackColor = True
         '
-        'optexponente
+        'lstejercicios
         '
-        Me.optexponente.AutoSize = True
-        Me.optexponente.Location = New System.Drawing.Point(124, 149)
-        Me.optexponente.Name = "optexponente"
-        Me.optexponente.Size = New System.Drawing.Size(31, 17)
-        Me.optexponente.TabIndex = 23
-        Me.optexponente.Text = "^"
-        Me.optexponente.UseVisualStyleBackColor = True
+        Me.lstejercicios.FormattingEnabled = True
+        Me.lstejercicios.Location = New System.Drawing.Point(342, 27)
+        Me.lstejercicios.Name = "lstejercicios"
+        Me.lstejercicios.Size = New System.Drawing.Size(216, 251)
+        Me.lstejercicios.TabIndex = 1
         '
-        'optPorcentaje
+        'btnparoimpar
         '
-        Me.optPorcentaje.AutoSize = True
-        Me.optPorcentaje.Location = New System.Drawing.Point(124, 126)
-        Me.optPorcentaje.Name = "optPorcentaje"
-        Me.optPorcentaje.Size = New System.Drawing.Size(76, 17)
-        Me.optPorcentaje.TabIndex = 22
-        Me.optPorcentaje.Text = "Porcentaje"
-        Me.optPorcentaje.UseVisualStyleBackColor = True
+        Me.btnparoimpar.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnparoimpar.Location = New System.Drawing.Point(118, 295)
+        Me.btnparoimpar.Name = "btnparoimpar"
+        Me.btnparoimpar.Size = New System.Drawing.Size(100, 34)
+        Me.btnparoimpar.TabIndex = 2
+        Me.btnparoimpar.Text = "Par o Impar?"
+        Me.btnparoimpar.UseVisualStyleBackColor = True
         '
-        'optDividir
+        'txtnum
         '
-        Me.optDividir.AutoSize = True
-        Me.optDividir.Location = New System.Drawing.Point(123, 103)
-        Me.optDividir.Name = "optDividir"
-        Me.optDividir.Size = New System.Drawing.Size(30, 17)
-        Me.optDividir.TabIndex = 21
-        Me.optDividir.TabStop = True
-        Me.optDividir.Text = "/"
-        Me.optDividir.UseVisualStyleBackColor = True
+        Me.txtnum.Location = New System.Drawing.Point(62, 57)
+        Me.txtnum.Name = "txtnum"
+        Me.txtnum.Size = New System.Drawing.Size(100, 20)
+        Me.txtnum.TabIndex = 3
         '
-        'optMultiplicar
+        'lblnum
         '
-        Me.optMultiplicar.AutoSize = True
-        Me.optMultiplicar.Location = New System.Drawing.Point(123, 80)
-        Me.optMultiplicar.Name = "optMultiplicar"
-        Me.optMultiplicar.Size = New System.Drawing.Size(29, 17)
-        Me.optMultiplicar.TabIndex = 20
-        Me.optMultiplicar.TabStop = True
-        Me.optMultiplicar.Text = "*"
-        Me.optMultiplicar.UseVisualStyleBackColor = True
+        Me.lblnum.AutoSize = True
+        Me.lblnum.Location = New System.Drawing.Point(12, 60)
+        Me.lblnum.Name = "lblnum"
+        Me.lblnum.Size = New System.Drawing.Size(44, 13)
+        Me.lblnum.TabIndex = 4
+        Me.lblnum.Text = "Numero"
         '
-        'optResta
+        'btnprimo
         '
-        Me.optResta.AutoSize = True
-        Me.optResta.Location = New System.Drawing.Point(123, 57)
-        Me.optResta.Name = "optResta"
-        Me.optResta.Size = New System.Drawing.Size(28, 17)
-        Me.optResta.TabIndex = 19
-        Me.optResta.TabStop = True
-        Me.optResta.Text = "-"
-        Me.optResta.UseVisualStyleBackColor = True
+        Me.btnprimo.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnprimo.Location = New System.Drawing.Point(12, 295)
+        Me.btnprimo.Name = "btnprimo"
+        Me.btnprimo.Size = New System.Drawing.Size(100, 34)
+        Me.btnprimo.TabIndex = 5
+        Me.btnprimo.Text = "Primo"
+        Me.btnprimo.UseVisualStyleBackColor = True
         '
-        'optSuma
+        'btncajero
         '
-        Me.optSuma.AutoSize = True
-        Me.optSuma.Checked = True
-        Me.optSuma.Location = New System.Drawing.Point(123, 34)
-        Me.optSuma.Name = "optSuma"
-        Me.optSuma.Size = New System.Drawing.Size(31, 17)
-        Me.optSuma.TabIndex = 18
-        Me.optSuma.TabStop = True
-        Me.optSuma.Text = "+"
-        Me.optSuma.UseVisualStyleBackColor = True
-        '
-        'lblrespuesta
-        '
-        Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(260, 61)
-        Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblrespuesta.TabIndex = 17
-        Me.lblrespuesta.Text = "Respuesta: ?"
-        '
-        'txtnum2
-        '
-        Me.txtnum2.Location = New System.Drawing.Point(202, 58)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(56, 20)
-        Me.txtnum2.TabIndex = 16
-        '
-        'lblnum2
-        '
-        Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(157, 61)
-        Me.lblnum2.Name = "lblnum2"
-        Me.lblnum2.Size = New System.Drawing.Size(41, 13)
-        Me.lblnum2.TabIndex = 15
-        Me.lblnum2.Text = "Num 2:"
-        '
-        'btnCalcular
-        '
-        Me.btnCalcular.Location = New System.Drawing.Point(89, 209)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(92, 33)
-        Me.btnCalcular.TabIndex = 14
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
-        '
-        'txtnum1
-        '
-        Me.txtnum1.Location = New System.Drawing.Point(47, 58)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(56, 20)
-        Me.txtnum1.TabIndex = 13
+        Me.btncajero.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncajero.Location = New System.Drawing.Point(224, 295)
+        Me.btncajero.Name = "btncajero"
+        Me.btncajero.Size = New System.Drawing.Size(88, 38)
+        Me.btncajero.TabIndex = 6
+        Me.btncajero.Text = "Cajero"
+        Me.btncajero.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(362, 312)
-        Me.Controls.Add(Me.optResiduo)
-        Me.Controls.Add(Me.optexponente)
-        Me.Controls.Add(Me.optPorcentaje)
-        Me.Controls.Add(Me.optDividir)
-        Me.Controls.Add(Me.optMultiplicar)
-        Me.Controls.Add(Me.optResta)
-        Me.Controls.Add(Me.optSuma)
-        Me.Controls.Add(Me.lblrespuesta)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.lblnum2)
-        Me.Controls.Add(Me.btnCalcular)
-        Me.Controls.Add(Me.txtnum1)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(570, 394)
+        Me.Controls.Add(Me.btncajero)
+        Me.Controls.Add(Me.btnprimo)
+        Me.Controls.Add(Me.lblnum)
+        Me.Controls.Add(Me.txtnum)
+        Me.Controls.Add(Me.btnparoimpar)
+        Me.Controls.Add(Me.lstejercicios)
+        Me.Controls.Add(Me.btnparesoimpares)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "tabla de multiplicar"
+        Me.Text = "Ejercicio con estructura de control"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents optResiduo As RadioButton
-    Friend WithEvents optexponente As RadioButton
-    Friend WithEvents optPorcentaje As RadioButton
-    Friend WithEvents optDividir As RadioButton
-    Friend WithEvents optMultiplicar As RadioButton
-    Friend WithEvents optResta As RadioButton
-    Friend WithEvents optSuma As RadioButton
-    Friend WithEvents lblrespuesta As Label
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents lblnum2 As Label
-    Friend WithEvents btnCalcular As Button
-    Friend WithEvents txtnum1 As TextBox
+    Friend WithEvents btnparesoimpares As Button
+    Friend WithEvents lstejercicios As ListBox
+    Friend WithEvents btnparoimpar As Button
+    Friend WithEvents txtnum As TextBox
+    Friend WithEvents lblnum As Label
+    Friend WithEvents btnprimo As Button
+    Friend WithEvents btncajero As Button
 End Class
