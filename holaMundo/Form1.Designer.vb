@@ -31,11 +31,21 @@ Partial Class Form1
         Me.lblrespuestavarianza = New System.Windows.Forms.Label()
         Me.lbldesviaciontipica = New System.Windows.Forms.Label()
         Me.lblrespuestadesviacion = New System.Windows.Forms.Label()
+        Me.grdestadisticas = New System.Windows.Forms.DataGridView()
+        Me.lbltotalf1 = New System.Windows.Forms.Label()
+        Me.lbltotalx1xf1 = New System.Windows.Forms.Label()
+        Me.lbltotalx21f1 = New System.Windows.Forms.Label()
+        Me.X1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.N1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.X1xF1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.X21xF1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.grdestadisticas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btnmediaaritmetica
         '
-        Me.Btnmediaaritmetica.Location = New System.Drawing.Point(134, 229)
+        Me.Btnmediaaritmetica.Location = New System.Drawing.Point(58, 408)
         Me.Btnmediaaritmetica.Name = "Btnmediaaritmetica"
         Me.Btnmediaaritmetica.Size = New System.Drawing.Size(120, 51)
         Me.Btnmediaaritmetica.TabIndex = 0
@@ -45,7 +55,7 @@ Partial Class Form1
         'lblseries
         '
         Me.lblseries.AutoSize = True
-        Me.lblseries.Location = New System.Drawing.Point(49, 57)
+        Me.lblseries.Location = New System.Drawing.Point(33, 26)
         Me.lblseries.Name = "lblseries"
         Me.lblseries.Size = New System.Drawing.Size(39, 13)
         Me.lblseries.TabIndex = 1
@@ -53,7 +63,7 @@ Partial Class Form1
         '
         'txtserie
         '
-        Me.txtserie.Location = New System.Drawing.Point(109, 57)
+        Me.txtserie.Location = New System.Drawing.Point(93, 26)
         Me.txtserie.Name = "txtserie"
         Me.txtserie.Size = New System.Drawing.Size(163, 20)
         Me.txtserie.TabIndex = 2
@@ -61,7 +71,7 @@ Partial Class Form1
         'lblrespuestamedia
         '
         Me.lblrespuestamedia.AutoSize = True
-        Me.lblrespuestamedia.Location = New System.Drawing.Point(122, 103)
+        Me.lblrespuestamedia.Location = New System.Drawing.Point(106, 72)
         Me.lblrespuestamedia.Name = "lblrespuestamedia"
         Me.lblrespuestamedia.Size = New System.Drawing.Size(13, 13)
         Me.lblrespuestamedia.TabIndex = 3
@@ -70,7 +80,7 @@ Partial Class Form1
         'lblmedia
         '
         Me.lblmedia.AutoSize = True
-        Me.lblmedia.Location = New System.Drawing.Point(49, 103)
+        Me.lblmedia.Location = New System.Drawing.Point(33, 72)
         Me.lblmedia.Name = "lblmedia"
         Me.lblmedia.Size = New System.Drawing.Size(39, 13)
         Me.lblmedia.TabIndex = 4
@@ -79,7 +89,7 @@ Partial Class Form1
         'lblvarianza
         '
         Me.lblvarianza.AutoSize = True
-        Me.lblvarianza.Location = New System.Drawing.Point(37, 131)
+        Me.lblvarianza.Location = New System.Drawing.Point(21, 100)
         Me.lblvarianza.Name = "lblvarianza"
         Me.lblvarianza.Size = New System.Drawing.Size(51, 13)
         Me.lblvarianza.TabIndex = 5
@@ -88,7 +98,7 @@ Partial Class Form1
         'lblrespuestavarianza
         '
         Me.lblrespuestavarianza.AutoSize = True
-        Me.lblrespuestavarianza.Location = New System.Drawing.Point(122, 131)
+        Me.lblrespuestavarianza.Location = New System.Drawing.Point(106, 100)
         Me.lblrespuestavarianza.Name = "lblrespuestavarianza"
         Me.lblrespuestavarianza.Size = New System.Drawing.Size(13, 13)
         Me.lblrespuestavarianza.TabIndex = 7
@@ -97,7 +107,7 @@ Partial Class Form1
         'lbldesviaciontipica
         '
         Me.lbldesviaciontipica.AutoSize = True
-        Me.lbldesviaciontipica.Location = New System.Drawing.Point(21, 171)
+        Me.lbldesviaciontipica.Location = New System.Drawing.Point(5, 140)
         Me.lbldesviaciontipica.Name = "lbldesviaciontipica"
         Me.lbldesviaciontipica.Size = New System.Drawing.Size(70, 13)
         Me.lbldesviaciontipica.TabIndex = 8
@@ -106,18 +116,84 @@ Partial Class Form1
         'lblrespuestadesviacion
         '
         Me.lblrespuestadesviacion.AutoSize = True
-        Me.lblrespuestadesviacion.Location = New System.Drawing.Point(122, 171)
+        Me.lblrespuestadesviacion.Location = New System.Drawing.Point(106, 140)
         Me.lblrespuestadesviacion.Name = "lblrespuestadesviacion"
         Me.lblrespuestadesviacion.Size = New System.Drawing.Size(13, 13)
         Me.lblrespuestadesviacion.TabIndex = 9
         Me.lblrespuestadesviacion.Text = "?"
+        '
+        'grdestadisticas
+        '
+        Me.grdestadisticas.AllowUserToDeleteRows = False
+        Me.grdestadisticas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdestadisticas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.X1, Me.F1, Me.N1, Me.X1xF1, Me.X21xF1})
+        Me.grdestadisticas.Location = New System.Drawing.Point(280, 26)
+        Me.grdestadisticas.Name = "grdestadisticas"
+        Me.grdestadisticas.Size = New System.Drawing.Size(556, 433)
+        Me.grdestadisticas.TabIndex = 10
+        '
+        'lbltotalf1
+        '
+        Me.lbltotalf1.AutoSize = True
+        Me.lbltotalf1.Location = New System.Drawing.Point(466, 462)
+        Me.lbltotalf1.Name = "lbltotalf1"
+        Me.lbltotalf1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotalf1.TabIndex = 11
+        Me.lbltotalf1.Text = "0.0"
+        '
+        'lbltotalx1xf1
+        '
+        Me.lbltotalx1xf1.AutoSize = True
+        Me.lbltotalx1xf1.Location = New System.Drawing.Point(684, 462)
+        Me.lbltotalx1xf1.Name = "lbltotalx1xf1"
+        Me.lbltotalx1xf1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotalx1xf1.TabIndex = 12
+        Me.lbltotalx1xf1.Text = "0.0"
+        '
+        'lbltotalx21f1
+        '
+        Me.lbltotalx21f1.AutoSize = True
+        Me.lbltotalx21f1.Location = New System.Drawing.Point(776, 462)
+        Me.lbltotalx21f1.Name = "lbltotalx21f1"
+        Me.lbltotalx21f1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotalx21f1.TabIndex = 13
+        Me.lbltotalx21f1.Text = "0.0"
+        '
+        'X1
+        '
+        Me.X1.HeaderText = "x1"
+        Me.X1.Name = "X1"
+        '
+        'F1
+        '
+        Me.F1.HeaderText = "f1"
+        Me.F1.Name = "F1"
+        '
+        'N1
+        '
+        Me.N1.HeaderText = "n1"
+        Me.N1.Name = "N1"
+        '
+        'X1xF1
+        '
+        Me.X1xF1.HeaderText = "x1xf1"
+        Me.X1xF1.Name = "X1xF1"
+        '
+        'X21xF1
+        '
+        Me.X21xF1.HeaderText = "x21xf1"
+        Me.X21xF1.Name = "X21xF1"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(522, 312)
+        Me.ClientSize = New System.Drawing.Size(875, 501)
+        Me.Controls.Add(Me.lbltotalx21f1)
+        Me.Controls.Add(Me.lbltotalx1xf1)
+        Me.Controls.Add(Me.lbltotalf1)
+        Me.Controls.Add(Me.grdestadisticas)
         Me.Controls.Add(Me.lblrespuestadesviacion)
         Me.Controls.Add(Me.lbldesviaciontipica)
         Me.Controls.Add(Me.lblrespuestavarianza)
@@ -132,6 +208,7 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "Matricez y poo"
+        CType(Me.grdestadisticas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -146,4 +223,13 @@ Partial Class Form1
     Friend WithEvents lblrespuestavarianza As Label
     Friend WithEvents lbldesviaciontipica As Label
     Friend WithEvents lblrespuestadesviacion As Label
+    Friend WithEvents grdestadisticas As DataGridView
+    Friend WithEvents lbltotalf1 As Label
+    Friend WithEvents lbltotalx1xf1 As Label
+    Friend WithEvents lbltotalx21f1 As Label
+    Friend WithEvents X1 As DataGridViewTextBoxColumn
+    Friend WithEvents F1 As DataGridViewTextBoxColumn
+    Friend WithEvents N1 As DataGridViewTextBoxColumn
+    Friend WithEvents X1xF1 As DataGridViewTextBoxColumn
+    Friend WithEvents X21xF1 As DataGridViewTextBoxColumn
 End Class
