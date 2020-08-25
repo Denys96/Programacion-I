@@ -69,3 +69,15 @@ C:\Users\DELL\Source\Repos\Programacion1 conversor nuevo\holaMundo\obj\Debug\hol
 C:\Users\DELL\Source\Repos\Programacion1 conversor nuevo\holaMundo\obj\Debug\holaMundo.exe
 C:\Users\DELL\Source\Repos\Programacion1 conversor nuevo\holaMundo\obj\Debug\holaMundo.xml
 C:\Users\DELL\Source\Repos\Programacion1 conversor nuevo\holaMundo\obj\Debug\holaMundo.pdb
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\bin\Debug\holaMundo.exe.config
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\bin\Debug\holaMundo.exe
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\bin\Debug\holaMundo.pdb
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\bin\Debug\holaMundo.xml
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.vbprojAssemblyReference.cache
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.Form1.resources
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.Resources.resources
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.vbproj.GenerateResource.cache
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.vbproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.exe
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.xml
+C:\Users\DELL\Source\Repos\programacion-1 nuevo\holaMundo\obj\Debug\holaMundo.pdb
