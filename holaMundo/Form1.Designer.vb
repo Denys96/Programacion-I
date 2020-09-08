@@ -22,67 +22,90 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblnumero = New System.Windows.Forms.Label()
-        Me.lblRespuestaRomano = New System.Windows.Forms.Label()
-        Me.txtnumero = New System.Windows.Forms.TextBox()
-        Me.btncalcular = New System.Windows.Forms.Button()
+        Me.lbldepto = New System.Windows.Forms.Label()
+        Me.lblmun = New System.Windows.Forms.Label()
+        Me.cbodepto = New System.Windows.Forms.ComboBox()
+        Me.cbomun = New System.Windows.Forms.ComboBox()
+        Me.lblarea = New System.Windows.Forms.Label()
+        Me.cboarea = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'lblnumero
+        'lbldepto
         '
-        Me.lblnumero.AutoSize = True
-        Me.lblnumero.Location = New System.Drawing.Point(12, 85)
-        Me.lblnumero.Name = "lblnumero"
-        Me.lblnumero.Size = New System.Drawing.Size(42, 13)
-        Me.lblnumero.TabIndex = 1
-        Me.lblnumero.Text = "Capital:"
+        Me.lbldepto.AutoSize = True
+        Me.lbldepto.Location = New System.Drawing.Point(10, 48)
+        Me.lbldepto.Name = "lbldepto"
+        Me.lbldepto.Size = New System.Drawing.Size(39, 13)
+        Me.lbldepto.TabIndex = 1
+        Me.lbldepto.Text = "Depto:"
         '
-        'lblRespuestaRomano
+        'lblmun
         '
-        Me.lblRespuestaRomano.AutoSize = True
-        Me.lblRespuestaRomano.Location = New System.Drawing.Point(169, 85)
-        Me.lblRespuestaRomano.Name = "lblRespuestaRomano"
-        Me.lblRespuestaRomano.Size = New System.Drawing.Size(99, 13)
-        Me.lblRespuestaRomano.TabIndex = 3
-        Me.lblRespuestaRomano.Text = "Numero Romano: ?"
+        Me.lblmun.AutoSize = True
+        Me.lblmun.Location = New System.Drawing.Point(185, 48)
+        Me.lblmun.Name = "lblmun"
+        Me.lblmun.Size = New System.Drawing.Size(31, 13)
+        Me.lblmun.TabIndex = 3
+        Me.lblmun.Text = "Mun:"
         '
-        'txtnumero
+        'cbodepto
         '
-        Me.txtnumero.Location = New System.Drawing.Point(60, 82)
-        Me.txtnumero.Name = "txtnumero"
-        Me.txtnumero.Size = New System.Drawing.Size(100, 20)
-        Me.txtnumero.TabIndex = 6
+        Me.cbodepto.FormattingEnabled = True
+        Me.cbodepto.Location = New System.Drawing.Point(58, 45)
+        Me.cbodepto.Name = "cbodepto"
+        Me.cbodepto.Size = New System.Drawing.Size(121, 21)
+        Me.cbodepto.TabIndex = 9
         '
-        'btncalcular
+        'cbomun
         '
-        Me.btncalcular.Location = New System.Drawing.Point(73, 159)
-        Me.btncalcular.Name = "btncalcular"
-        Me.btncalcular.Size = New System.Drawing.Size(109, 29)
-        Me.btncalcular.TabIndex = 8
-        Me.btncalcular.Text = "Calcular"
-        Me.btncalcular.UseVisualStyleBackColor = True
+        Me.cbomun.FormattingEnabled = True
+        Me.cbomun.Location = New System.Drawing.Point(222, 45)
+        Me.cbomun.Name = "cbomun"
+        Me.cbomun.Size = New System.Drawing.Size(121, 21)
+        Me.cbomun.TabIndex = 10
+        '
+        'lblarea
+        '
+        Me.lblarea.AutoSize = True
+        Me.lblarea.Location = New System.Drawing.Point(349, 48)
+        Me.lblarea.Name = "lblarea"
+        Me.lblarea.Size = New System.Drawing.Size(32, 13)
+        Me.lblarea.TabIndex = 11
+        Me.lblarea.Text = "Area:"
+        '
+        'cboarea
+        '
+        Me.cboarea.FormattingEnabled = True
+        Me.cboarea.Location = New System.Drawing.Point(386, 45)
+        Me.cboarea.Name = "cboarea"
+        Me.cboarea.Size = New System.Drawing.Size(136, 21)
+        Me.cboarea.TabIndex = 12
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(296, 257)
-        Me.Controls.Add(Me.btncalcular)
-        Me.Controls.Add(Me.txtnumero)
-        Me.Controls.Add(Me.lblRespuestaRomano)
-        Me.Controls.Add(Me.lblnumero)
+        Me.ClientSize = New System.Drawing.Size(534, 253)
+        Me.Controls.Add(Me.cboarea)
+        Me.Controls.Add(Me.lblarea)
+        Me.Controls.Add(Me.cbomun)
+        Me.Controls.Add(Me.cbodepto)
+        Me.Controls.Add(Me.lblmun)
+        Me.Controls.Add(Me.lbldepto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Ejercicios"
+        Me.Text = "combox dinamicos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents lblnumero As Label
-    Friend WithEvents lblRespuestaRomano As Label
-    Friend WithEvents txtnumero As TextBox
-    Friend WithEvents btncalcular As Button
+    Friend WithEvents lbldepto As Label
+    Friend WithEvents lblmun As Label
+    Friend WithEvents cbodepto As ComboBox
+    Friend WithEvents cbomun As ComboBox
+    Friend WithEvents lblarea As Label
+    Friend WithEvents cboarea As ComboBox
 End Class
