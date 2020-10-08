@@ -34,7 +34,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "tabla de multiplicar"
+        Me.Text = "Sistema de Inventario y Facturacion"
         Me.ResumeLayout(False)
 
     End Sub
