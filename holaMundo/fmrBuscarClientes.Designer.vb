@@ -161,7 +161,7 @@ Partial Class fmrBuscarClientes
         Me.Controls.Add(Me.lblBuscarCliente)
         Me.Controls.Add(Me.txtBuscarCliente)
         Me.Name = "fmrBuscarClientes"
-        Me.Text = "frmBuscarClientes"
+        Me.Text = "fmrBuscarClientes"
         CType(Me.grdBuscarCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

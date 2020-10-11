@@ -1,4 +1,4 @@
-﻿Public Class frmClientes
+﻿Public Class fmrClientes
     Dim objConexion As New db_conexion()
     Dim dataTable As New DataTable
     Dim posicion As Integer
@@ -131,4 +131,6 @@
             mostrarDatos()
         End If
     End Sub
+
+
 End Class

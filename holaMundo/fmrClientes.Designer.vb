@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmClientes
+Partial Class fmrClientes
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -296,7 +296,7 @@ Partial Class frmClientes
         Me.lblCodigoCliente.TabIndex = 0
         Me.lblCodigoCliente.Text = "CODIGO:"
         '
-        'frmClientes
+        'fmrClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -304,7 +304,7 @@ Partial Class frmClientes
         Me.Controls.Add(Me.grbEdicion)
         Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatos)
-        Me.Name = "frmClientes"
+        Me.Name = "fmrClientes"
         Me.Text = "Registro de Clientes"
         Me.grbEdicion.ResumeLayout(False)
         Me.grbNavegacion.ResumeLayout(False)
